@@ -16,7 +16,7 @@ class MpesaAccount:
 	def withdrawal(self,amount):
 		if amount<self.balance:
 		    self.balance = self.balance - amount
-			self.withdrawas.append(amount) 
+			self.withdrawals.append(amount) 
 			message5 = "Confirmed {} You have withdrawn {} Ksh from your account.Your balance is {} Ksh".format(self.name,s,self.balance)
 			print (message5)
         else:
@@ -45,7 +45,7 @@ class MpesaAccount:
 
 	def pay loan(self,amount):
 		if self.loan==0:
-			print("you do not have a loan debt")
+			print("Hello {} You now qualify for a loan ")
 		elif amount<self.loan:
 			self.loan=self.loan-amount
 			print("Hi {} you have paid {} as part of your loan repayment. Your remaining balance is {}".format(self.name, amount, self.loan))
